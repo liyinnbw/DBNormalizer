@@ -17,14 +17,8 @@ import decomposition
 ###########################################
 
 # Modify from this line onwards to suit your needs
-R = ['program_id','project_id', 'project_application_id','talent_id','experience_id','hearabout_id', 'program_application_status','project_application_status']
-FD = [
-    [['talent_id'],['program_id', 'program_application_status']],
-    [['experience_id'],['talent_id','project_id']],
-    [['project_application_id'],['talent_id', 'program_id', 'project_id', 'project_application_status']],
-    [['hearabout_id'],['program_id','talent_id']],
-    [['project_id'],['program_id']],
-]
+R = ['A', 'B', 'C']
+FD = [[['A', 'B'], ['C']], [['A'], ['B']], [['B'], ['A']]]
 normalform = normalforms.threenf
 # Do not modify anything from this line onwards
 
@@ -70,15 +64,15 @@ fragments = decomposition.decompose(R,FD,normalform,useSigmaPlus,printStep)
 decomposition.print_fragments(fragments,normalform)
 
 ###########################################
-# synthesize to given normal form
+# synthesize to 3NF (not any form)
 # also check wether synthesize is dependency-preserving
 # if not show which dependency is lost
-# also verify result against given normal form
+# also verify result against 3NF
 ###########################################
 printStep = False # if true will print steps invovled in deriving the answer
 print('')
 print('')
-print('synthesis:', normalform.__name__, 'showStep' if printStep else '')
+print('synthesis:', normalform.threenf, 'showStep' if printStep else '')
 fragments = decomposition.simple_synthesis(R,FD,printStep)
 decomposition.print_fragments(fragments,normalform)
 
