@@ -26,7 +26,7 @@ normalform = normalforms.threenf
 # find all candidate keys
 ###########################################
 print('all candiate keys:')
-print (api.candidate_keys(R, FD))
+print(api.candidate_keys(R, FD))
 
 ###########################################
 # find a minimal cover
@@ -36,7 +36,7 @@ print('')
 print('a minimal cover:')
 minCover = api.min_cover(R,FD)
 for F in minCover:
-    print(F)
+    print(F[0],'->',F[1])
 
 ###########################################
 # check all F in FD for violation of given normal form
@@ -46,7 +46,7 @@ print('')
 print('check normal form:',normalform.__name__)
 FDsimplified = api.min_cover_step1(R,FD)
 for F in FDsimplified:
-    print(F,normalform(R,FDsimplified,F))
+    print(F[0],'->',F[1],normalform(R,FDsimplified,F))
 
 
 ###########################################
