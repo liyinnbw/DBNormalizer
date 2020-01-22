@@ -23,10 +23,12 @@ normalform = normalforms.threenf
 python main.py
 
 ## Output:
+(Note: Output is formated using python3. For best experience pls use python3.)
+
 Following the previous example, the output will be:
 ```
 all candiate keys:
-[set(['A']), set(['B'])]
+[{'A'}, {'B'}]
 
 
 a minimal cover:
@@ -35,27 +37,27 @@ a minimal cover:
 [['B'], ['C']]
 
 
-('check normal form:', 'threenf')
-([['A', 'B'], ['C']], True)
-([['A'], ['B']], True)
-([['B'], ['A']], True)
+check normal form: threenf
+[['A', 'B'], ['C']] True
+[['A'], ['B']] True
+[['B'], ['A']] True
 
 
-('decomposition:', 'threenf', '')
+decomposition: threenf 
 dependency-preserving
-('====', ['A', 'B', 'C'])
-(['A'], '->', ['B'], True)
-(['A'], '->', ['C'], True)
-(['B'], '->', ['A'], True)
-(['B'], '->', ['C'], True)
+==== ['A', 'B', 'C']
+['A'] -> ['B'] True
+['A'] -> ['C'] True
+['B'] -> ['A'] True
+['B'] -> ['C'] True
 
 
-('synthesis:', 'threenf', '')
+synthesis: threenf 
 already in 3NF
-('====', ['A', 'B', 'C'])
-(['A', 'B'], '->', ['C'], True)
-(['A'], '->', ['B'], True)
-(['B'], '->', ['A'], True)
+==== ['A', 'B', 'C']
+['A', 'B'] -> ['C'] True
+['A'] -> ['B'] True
+['B'] -> ['A'] True
 ```
 * The 1st section gives you all possible candidate keys
 * The 2nd section computes the minimal cover
