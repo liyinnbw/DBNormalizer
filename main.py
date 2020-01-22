@@ -72,7 +72,7 @@ decomposition.print_fragments(fragments,normalform)
 printStep = False # if true will print steps invovled in deriving the answer
 print('')
 print('')
-print('synthesis:', normalform.threenf, 'showStep' if printStep else '')
+print('synthesis: threenf', 'showStep' if printStep else '')
 fragments = decomposition.simple_synthesis(R,FD,printStep)
 decomposition.print_fragments(fragments,normalform)
 
