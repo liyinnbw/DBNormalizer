@@ -32,15 +32,15 @@ all candiate keys:
 
 
 a minimal cover:
-[['A'], ['B']]
-[['B'], ['A']]
-[['B'], ['C']]
+['A'] -> ['B']
+['B'] -> ['A']
+['B'] -> ['C']
 
 
 check normal form: threenf
-[['A', 'B'], ['C']] True
-[['A'], ['B']] True
-[['B'], ['A']] True
+['A', 'B'] -> ['C'] True
+['A'] -> ['B'] True
+['B'] -> ['A'] True
 
 
 decomposition: threenf 
