@@ -1,5 +1,5 @@
 # DBNormalizer
-Minimal command line python program to help you normalise your relational database.
+Minimal command line python program to help you normalise your relational database design.
 
 ## Before you Run:
 Modify the portion indicated in the main.py file according to comment (YES pls modify inside the source code).
