@@ -75,12 +75,12 @@ for F in FDsimplified:
 
 ###########################################
 # decomposition to given normal form
-# also check wether decomposition is dependency-preserving
+# also check whether decomposition is dependency-preserving
 # if not show which dependency is lost
 # also verify result against given normal form
 ###########################################
 useSigmaPlus = True
-printStep = False  # if true will print steps invovled in deriving the answer
+printStep = False  # if true will print steps involved in deriving the answer
 print('')
 print('')
 print('decomposition:', normalform.__name__, 'showStep' if printStep else '')
@@ -89,11 +89,11 @@ decomposition.print_fragments(fragments, normalform)
 
 ###########################################
 # synthesize to 3NF (not any form)
-# also check wether synthesize is dependency-preserving
+# also check whether synthesize is dependency-preserving
 # if not show which dependency is lost
 # also verify result against 3NF
 ###########################################
-printStep = False  # if true will print steps invovled in deriving the answer
+printStep = False  # if true will print steps involved in deriving the answer
 print('')
 print('')
 print('synthesis: threenf', 'showStep' if printStep else '')
