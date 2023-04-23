@@ -20,10 +20,10 @@ import decomposition
 # R = ['A', 'B', 'C', 'D']
 # FD = [[['B', 'C'], ['D']], [['A'], ['B']]]
 # normalform = normalforms.bcnf
-R = input("Enter the list of unique variables (R) separated by commas: ").split(",")
+R = input("Enter the list of unique variables of R separated by commas (e.g. a,b,c,d): ").split(",")
 FD = []
 while True:
-    dep = input("Enter a functional dependency e.g. a,b->c (or enter nothing to stop): ")
+    dep = input("Enter a functional dependency (e.g. a,b->c) or enter nothing to stop: ")
     if not dep:
         break
     try:
