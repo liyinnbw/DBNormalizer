@@ -1,26 +1,43 @@
 # DBNormalizer
 Minimal command line python program to help you normalise your relational database design.
 
-## Before you Run:
-Modify the portion indicated in the main.py file according to comment (YES pls modify inside the source code).
-The modification basically gives the following inputs:
-1. Set of variables in your database.
-2. List of functional dependencies implied in your database (You don't have to list trivial ones).
-3. Set the normal form you want to test/achieve.
+[//]: # (## Before you Run:)
 
-An example of the inputs will be:
-```
-R = ['A','B', 'C']
-FD = [
-    [['A', 'B'], ['C']], 
-    [['A'], ['B']], 
-    [['B'], ['A']]
-]
-normalform = normalforms.threenf
-```
+[//]: # (Modify the portion indicated in the main.py file according to comment &#40;YES pls modify inside the source code&#41;.)
+
+[//]: # (The modification basically gives the following inputs:)
+
+[//]: # (1. Set of variables in your database.)
+
+[//]: # (2. List of functional dependencies implied in your database &#40;You don't have to list trivial ones&#41;.)
+
+[//]: # (3. Set the normal form you want to test/achieve.)
+
+[//]: # ()
+[//]: # (An example of the inputs will be:)
+
+[//]: # (```)
+
+[//]: # (R = ['A','B', 'C'])
+
+[//]: # (FD = [)
+
+[//]: # (    [['A', 'B'], ['C']], )
+
+[//]: # (    [['A'], ['B']], )
+
+[//]: # (    [['B'], ['A']])
+
+[//]: # (])
+
+[//]: # (normalform = normalforms.threenf)
+
+[//]: # (```)
 
 ## How to Run:
-python main.py
+`python main.py`
+
+The program will prompt you the enter the **attributes**, **FDs** and the **normal form type**.
 
 ## Output:
 (Note: Output is formated using python3. For best experience pls use python3.)
