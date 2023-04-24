@@ -30,7 +30,7 @@ while True:
         lhs, rhs = dep.split("->")
         FD.append([lhs.split(","), rhs.split(",")])
     except ValueError:
-        print("Invalid functional dependency!")
+        print("Invalid functional dependency! Reenter the functional dependency.")
 while True:
     normalform_name = input("Enter the normal form you want to achieve (2nf, 3nf, or bcnf): ")
     if normalform_name == "2nf":
@@ -43,7 +43,7 @@ while True:
         normalform = normalforms.bcnf
         break
     else:
-        print("Invalid normal form!")
+        print("Invalid normal form! Reenter the normal form.")
 
 # Do not modify anything from this line onwards
 
