@@ -4,10 +4,10 @@ Minimal command line python program to help you normalise your relational databa
 ## How to Run:
 `python main.py`
 
-The program will prompt you the enter the **attributes**, **FDs** and the **normal form type**.
+The program will prompt you to enter the **attributes**, **FDs** and the **normal form type**.
 
 ## Output:
-(Note: Output is formated using python3. For best experience pls use python3.)
+(Note: Output is formatted using python3. For best experience pls use python3.)
 
 Following the previous example, the output will be:
 ```
@@ -46,9 +46,9 @@ already in 3NF
 * The 1st section gives you all possible candidate keys
 * The 2nd section computes the minimal cover
 * The 3rd section checks if the supplied functional dependencies are normalized.
-* The 4th section trys to achieve required normalization by decomposition method (can loose some dependencies).
-* The 5th section trys to achieve 3NF by synthesis method (only 3NF is guaranteed, and all dependencies preserved).
+* The 4th section tries to achieve required normalization by the decomposition method (can lose some dependencies).
+* The 5th section tries to achieve 3NF by synthesis method (only 3NF is guaranteed, and all dependencies preserved).
 
-Unless you must achieve BCNF, synthesis method is more popular because it at least gives you 3NF and preserves 
+Unless you must achieve BCNF, the synthesis method is more popular because it at least gives you 3NF and preserves 
 all original dependencies. And mostly likely, it gives you BCNF as well.
 
