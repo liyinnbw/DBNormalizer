@@ -17,9 +17,7 @@ import decomposition
 ###########################################
 
 # Modify from this line onwards to suit your needs
-# R = ['A', 'B', 'C', 'D']
-# FD = [[['B', 'C'], ['D']], [['A'], ['B']]]
-# normalform = normalforms.bcnf
+
 R = input("Enter the list of unique variables of R separated by commas (e.g. a,b,c,d): ").split(",")
 FD = []
 while True:
